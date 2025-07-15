@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Site</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="/categories/">Categories</a>
+      <a href="/about/">About us</a>
+      <a href="/contact/">Contact</a>
+      <a href="/login/">Login</a>
+    </nav>
+
+    <div class="main-content">{% block content %}{% endblock %}</div>
+
+    <footer>
+      <p>© 2025 My Site. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Footer Link 1</a>
+        <a href="#">Footer Link 2</a>
+        <a href="#">Footer Link 3</a>
+        <a href="#">Footer Link 4</a>
+      </div>
+    </footer>
+  </body>
+</html>
